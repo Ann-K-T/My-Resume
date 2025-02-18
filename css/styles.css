@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+/* general styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+/* end of general styles */
+
+.container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: 1fr 3fr 1fr; /* Defines 3 rows */
+}
+
+/* header section */
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #efcfe3;
+  color: #2c3e50;
+  padding: 0.5rem;
+  align-items: center;
+  border-bottom: dashed #004d40 6px;
+}
+
+.name {
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+  color: #004d40;
+  text-align: left;
+  padding-left: 20px;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 20px;
+  color: #004d40;
+  font-size: 1.5rem;
+}
+header nav ul li a {
+  color: #004d40;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+/* Hover and Active Effects */
+header nav ul li a:hover {
+  color: #004d40;
+  background-color: #f4b5c4;
+  border-radius: 5px;
+}
+header nav ul li a:active {
+  transform: scale(0.95);
+}
+/* end of header section */
+
+.callToAction {
+  color: #efcfe3;
+  background-color: #004d40;
+  border-radius: 5px;
+}
+
+/* main section */
+.main-home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #004d40;
+  /* align-items: center; */
+}
+
+.main-home-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-home-intro h2 {
+  color: #fff; /* White for best contrast */
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.main-home-intro p {
+  color: #e0e0e0; /* White for best contrast */
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.main-home-intro button {
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid #f4b5c4;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.main-home-intro button a {
+  color: #f4b5c4;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+/* Hover  */
+.main-home-intro button:hover {
+  background-color: #f4b5c4;
+  transform: scale(1.04);
+  transition: 0.3s ease-in-out;
+}
+.main-home-intro button:hover a {
+  color: #004d40;
+}
+
+.main-home-image_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px; /* Set the width of the div */
+  overflow: hidden; /* Prevents image overflow */
+  padding: 0.5rem;
+}
+
+.main-home-image_container img {
+  max-width: 100%; /* Ensures image does not exceed div width */
+  height: auto; /* Maintains aspect ratio */
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+.main-home-image_container:hover img {
+  transform: scale(1.1); /* Scale image on hover */
+}
+/* end of main section */
+
+/* footer section */
+footer {
+  border-top: solid #004d40 4px;
+  background-color: #efcfe3;
+  padding: 1em;
+  text-align: center;
+  border-top: dashed #004d40 6px;
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;
+}
+footer nav ul {
+  display: flex;
+}
+
+footer nav ul li {
+  margin-right: 20px;
+  color: #004d40;
+  font-size: 1.5rem;
+}
+
+footer nav ul li a {
+  color: #004d40;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+/* Hover and Active Effects */
+footer nav ul li a:hover {
+  color: #004d40;
+  background-color: #f4b5c4;
+  border-radius: 5px;
+}
+footer nav ul li a:active {
+  transform: scale(0.95);
+}
+
+footer p {
+  color: #004d40;
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+/* end of footer */
+/*  */
+/*  */
+/* Mobile-first approach */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-home {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .main-home-intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .main-home-intro p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  .main-home-image_container {
+    width: 100%;
+  }
+
+  .main-home-image_container img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Tablet Layout (768px - 1000px) */
+@media screen and (max-width: 1000px) {
+  .name {
+    font-size: 4rem;
+  }
+
+  header nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main-home {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .main-home-intro button {
+    font-size: 1.3rem;
+    padding: 8px 16px;
+  }
+}
+
+/* Larger Screens (Above 1000px) */
+@media screen and (min-width: 1000px) {
+  .main-home-intro h2 {
+    font-size: 4rem;
+  }
+
+  .name {
+    font-size: 6rem;
+  }
+
+  .main-home-image_container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .name {
+    font-size: 8rem;
+  }
+
+  .main-home-intro h2 {
+    font-size: 6rem;
+  }
+
+  .main-home-intro p {
+    font-size: 2rem;
+  }
+
+  header nav ul li {
+    font-size: 2rem;
+    margin-right: 30px;
+  }
+
+  footer nav ul li {
+    font-size: 2rem;
+    margin-right: 30px;
+  }
+}
