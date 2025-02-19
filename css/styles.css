@@ -228,6 +228,7 @@ footer p {
   }
 
   .main-home-image_container {
+    align-items: center;
     width: 100%;
   }
 
@@ -267,6 +268,9 @@ footer p {
   .main-home-intro button {
     font-size: 1.3rem;
     padding: 8px 16px;
+  }
+  .main-home-image_container {
+    width: 100%;
   }
 }
 
