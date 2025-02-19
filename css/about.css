@@ -59,6 +59,9 @@
 
 /* Mobile Screens (Max 768px) */
 @media screen and (max-width: 768px) {
+  .head {
+    flex: none;
+  }
   .main-about {
     grid-template-columns: 1fr;
     text-align: center;

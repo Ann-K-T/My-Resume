@@ -12,8 +12,8 @@
 
 .container {
   display: grid;
-  min-height: 100vh;
-  grid-template-rows: 1fr 3fr 1fr; /* Defines 3 rows */
+  height: 100vh;
+  grid-template-rows: 1fr 5fr 1fr;
 }
 
 /* header section */
