@@ -1,0 +1,141 @@
+/* Full Page Section */
+.main-contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fddde6; /* Soft pastel pink */
+  padding: 20px;
+}
+
+/* Form Container */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* width is 50% of the parent main-section */
+  width: 50%;
+  /* height: 50%; */
+  padding: 20px;
+  background-color: #fff; /* White form */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 61, 44, 0.2);
+  border: 2px solid rgba(0, 61, 44, 0.3);
+  font-size: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+/* Labels */
+.form-container label {
+  color: #003d2c;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Email Input */
+.form-container input[type='email'] {
+  width: calc(100% - 100px);
+  padding: 10px;
+  border: 1px solid rgba(0, 61, 44, 0.3);
+  border-radius: 5px;
+  background-color: #ffeef5;
+  color: #003d2c;
+  display: block;
+  margin-top: 5px;
+}
+
+.form-container .topic p,
+.email-us {
+  color: #003d2c;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Checkbox Container */
+.form-container div[class^='html'],
+.form-container div[class^='js'],
+.form-container div[class^='nodejs'],
+.form-container div[class^='other'],
+.form-container div[class^='email'] {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+/* Checkbox Input */
+.form-container input[type='checkbox'] {
+  accent-color: #003d2c;
+  width: 20px;
+  height: 20px;
+}
+
+/* Button */
+.form-container button {
+  background-color: #003d2c;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+  width: 100%;
+}
+
+/* Button Hover */
+.form-container button:hover {
+  background-color: #00291e;
+}
+
+/* Mobile Screens (max 768px) */
+@media screen and (max-width: 768px) {
+  .form-container {
+    width: 80%;
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+  .form-container input[type='email'],
+  .form-container button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+
+/* Tablet Screens (768px - 1000px) */
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .form-container {
+    width: 60%;
+    font-size: 1rem;
+  }
+}
+
+/* Larger Screens (min 1000px) */
+@media screen and (min-width: 1000px) {
+  .form-container {
+    width: 50%;
+    font-size: 1.5rem;
+  }
+}
+
+/* Extra Large Screens (min 1600px) */
+@media screen and (min-width: 1600px) {
+  .form-container {
+    width: 40%;
+    font-size: 1.2rem;
+    padding: 30px;
+  }
+  .form-container input[type='email'],
+  .form-container button {
+    font-size: 1.5rem;
+    padding: 12px;
+  }
+}
